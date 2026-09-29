@@ -1,5 +1,46 @@
 <?php
 include "db.php";
+
+$clients = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS c FROM clients"))['c'];
+$services = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS c FROM services"))['c'];
+$bookings = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS c FROM bookings"))['c'];
+
+$revRow = mysqli_fetch_assoc(mysqli_query($conn, "SELECT IFNULL(SUM(amount_paid),0) AS s FROM payments"));
+$revenue = $revRow['s'];
+?>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<?php include "nav.php"; ?>
+
+<div class="container mt-4">
+  <h2 class="text-primary">Dashboard</h2>
+
+  <ul class="list-group mt-3">
+    <li class="list-group-item">Total Clients: <b class="text-primary"><?php echo $clients; ?></b></li>
+    <li class="list-group-item">Total Services: <b class="text-success"><?php echo $services; ?></b></li>
+    <li class="list-group-item">Total Bookings: <b class="text-warning"><?php echo $bookings; ?></b></li>
+    <li class="list-group-item">Total Revenue: <b class="text-danger">₱<?php echo number_format($revenue,2); ?></b></li>
+  </ul>
+
+  <p class="mt-4">
+    Quick links:
+    <a href="/assessment_beginner/pages/clients_add.php" class="btn btn-primary btn-sm">Add Client</a>
+    <a href="/assessment_beginner/pages/bookings_create.php" class="btn btn-success btn-sm">Create Booking</a>
+  </p>
+</div>
+
+</body>
+</html>
+
+<!-- <?php
+include "db.php";
  
 $clients = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS c FROM clients"))['c'];
 $services = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS c FROM services"))['c'];
@@ -33,4 +74,5 @@ $revenue = $revRow['s'];
 </p>
  
 </body>
-</html>
+</html> -->
+
