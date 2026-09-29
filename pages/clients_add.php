@@ -29,8 +29,8 @@ if (isset($_POST['save'])) {
 </head>
 <body>
 <?php include "../nav.php"; ?>
-
-<h2 class="text-primary">Add Client</h2>
+<div class="container mt-5">
+<h2 class="text-black">Add Client</h2>
 <p class="text-danger"><?php echo $message; ?></p>
 
 <form method="post">
@@ -48,6 +48,7 @@ if (isset($_POST['save'])) {
 
   <button type="submit" name="save" class="btn btn-success">Save</button>
 </form>
+</div>
 </body>
 </html>
 

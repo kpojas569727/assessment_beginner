@@ -35,8 +35,8 @@ if (isset($_POST['update'])) {
 </head>
 <body>
 <?php include "../nav.php"; ?>
-
-<h2 class="text-primary">Edit Client</h2>
+<div class="container mt-5">
+<h2 class="text-black">Edit Client</h2>
 <p class="text-danger"><?php echo $message; ?></p>
 
 <form method="post">
@@ -54,6 +54,7 @@ if (isset($_POST['update'])) {
 
   <button type="submit" name="update" class="btn btn-primary">Update</button>
 </form>
+</div>
 </body>
 </html>
 

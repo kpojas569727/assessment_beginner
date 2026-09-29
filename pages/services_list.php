@@ -12,7 +12,9 @@ $result = mysqli_query($conn, "SELECT * FROM services ORDER BY service_id DESC")
 <body>
 <?php include "../nav.php"; ?>
 
-<h2 class="text-primary">Services</h2>
+
+<div class="container mt-5">
+<h2 class="text-black">Services</h2>
 
 <table class="table table-bordered table-striped">
   <tr class="table-primary">
@@ -30,6 +32,7 @@ $result = mysqli_query($conn, "SELECT * FROM services ORDER BY service_id DESC")
     </tr>
   <?php } ?>
 </table>
+</div>
 </body>
 </html>
 

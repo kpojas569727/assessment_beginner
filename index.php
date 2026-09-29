@@ -20,7 +20,7 @@ $revenue = $revRow['s'];
 <?php include "nav.php"; ?>
 
 <div class="container mt-4">
-  <h2 class="text-primary">Dashboard</h2>
+  <h2 class="text-black">Dashboard</h2>
 
   <ul class="list-group mt-3">
     <li class="list-group-item">Total Clients: <b class="text-primary"><?php echo $clients; ?></b></li>

@@ -28,12 +28,12 @@ if (isset($_POST['update'])) {
 </head>
 <body>
 <?php include "../nav.php"; ?>
-
-<h2 class="text-primary">Edit Service</h2>
+<div class="container mt-5">
+<h2 class="text-black">Edit Service</h2>
 
 <form method="post">
   <label>Service Name</label><br>
-  <input type="text" name="service_name" value="<?php echo $service['service_name']; ?>" class="form-control"><br>
+  <input type="text" name="service_name" value="<?php echo $service['service_name']; ?>" class="form-control "><br>
 
   <label>Description</label><br>
   <textarea name="description" rows="4" class="form-control"><?php echo $service['description']; ?></textarea><br>
@@ -49,6 +49,7 @@ if (isset($_POST['update'])) {
 
   <button type="submit" name="update" class="btn btn-primary">Update</button>
 </form>
+</div>
 </body>
 </html>
 

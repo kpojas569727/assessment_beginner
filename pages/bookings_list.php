@@ -19,8 +19,8 @@ $result = mysqli_query($conn, $sql);
 </head>
 <body>
 <?php include "../nav.php"; ?>
-
-<h2 class="text-primary">Bookings</h2>
+<div class="container mt-5">
+<h2 class="text-black">Bookings</h2>
 <p><a href="bookings_create.php" class="btn btn-success btn-sm">+ Create Booking</a></p>
 
 <table class="table table-bordered table-striped">
@@ -42,6 +42,7 @@ $result = mysqli_query($conn, $sql);
     </tr>
   <?php } ?>
 </table>
+</div>
 </body>
 </html>
 

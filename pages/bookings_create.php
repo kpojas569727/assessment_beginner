@@ -31,8 +31,8 @@ if (isset($_POST['create'])) {
 </head>
 <body>
 <?php include "../nav.php"; ?>
-
-<h2 class="text-primary">Create Booking</h2>
+<div class="container mt-5">
+<h2 class="text-black">Create Booking</h2>
 
 <form method="post">
   <label>Client</label><br>
@@ -59,6 +59,7 @@ if (isset($_POST['create'])) {
 
   <button type="submit" name="create" class="btn btn-success">Create Booking</button>
 </form>
+</div>
 </body>
 </html>
 

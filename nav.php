@@ -1,12 +1,12 @@
 <?php // nav.php ?>
-<div class="bg-primary p-3">
-  <div class="container">
-    <a href="/assessment_beginner/index.php" class="text-white me-3">Dashboard</a>
-    <a href="/assessment_beginner/pages/clients_list.php" class="text-white me-3">Clients</a>
-    <a href="/assessment_beginner/pages/services_list.php" class="text-white me-3">Services</a>
-    <a href="/assessment_beginner/pages/bookings_list.php" class="text-white me-3">Bookings</a>
-    <a href="/assessment_beginner/pages/tools_list_assign.php" class="text-white me-3">Tools</a>
-    <a href="/assessment_beginner/pages/payments_list.php" class="text-white">Payments</a>
+<div class="bg-black p-3">
+  <div class="container d-flex justify-content-end">
+    <a href="/assessment_beginner/index.php" class="text-white me-3 text-decoration-none">Dashboard                                                              </a>
+    <a href="/assessment_beginner/pages/clients_list.php" class="text-white me-3 text-decoration-none">Clients</a>
+    <a href="/assessment_beginner/pages/services_list.php" class="text-white me-3 text-decoration-none">Services</a>
+    <a href="/assessment_beginner/pages/bookings_list.php" class="text-white me-3 text-decoration-none">Bookings</a>
+    <a href="/assessment_beginner/pages/tools_list_assign.php" class="text-white me-3 text-decoration-none">Tools</a>
+    <a href="/assessment_beginner/pages/payments_list.php" class="text-white text-decoration-none">Payments</a>
   </div>
 </div>
 
