@@ -53,8 +53,8 @@ if (isset($_POST['update'])) {
 </html>
 
 
-
-<!-- <?php
+<?php if (false): ?>
+<?php
 include "../db.php";
 $id = $_GET['id'];
  
@@ -102,4 +102,5 @@ if (isset($_POST['update'])) {
   <button type="submit" name="update">Update</button>
 </form>
 </body>
-</html> -->
+</html>
+<?php endif; ?>

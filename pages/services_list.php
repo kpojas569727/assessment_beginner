@@ -36,8 +36,8 @@ $result = mysqli_query($conn, "SELECT * FROM services ORDER BY service_id DESC")
 
 
 
-
-<!-- <?php
+<?php if (false): ?>
+<?php
 include "../db.php";
 $result = mysqli_query($conn, "SELECT * FROM services ORDER BY service_id DESC");
 ?>
@@ -65,4 +65,4 @@ $result = mysqli_query($conn, "SELECT * FROM services ORDER BY service_id DESC")
 </table>
 </body>
 </html>
-  -->
+ <?php endif; ?>

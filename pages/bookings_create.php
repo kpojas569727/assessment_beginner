@@ -65,8 +65,8 @@ if (isset($_POST['create'])) {
 
 
 
-
-<!-- <?php
+<?php if (false): ?>
+<?php
 include "../db.php";
  
 $clients = mysqli_query($conn, "SELECT * FROM clients ORDER BY full_name ASC");
@@ -125,4 +125,6 @@ if (isset($_POST['create'])) {
   <button type="submit" name="create">Create Booking</button>
 </form>
 </body>
-</html> -->
+</html>
+
+<?php endif; ?>

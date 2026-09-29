@@ -56,8 +56,8 @@ if (isset($_POST['save'])) {
 
 
 
-
-<!-- <?php
+<?php if (false): ?>
+<?php
 include "../db.php";
  
 $message = "";
@@ -104,4 +104,6 @@ if (isset($_POST['save'])) {
   <button type="submit" name="save">Save</button>
 </form>
 </body>
-</html> -->
+</html>
+
+<?php endif; ?>

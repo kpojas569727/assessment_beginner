@@ -39,7 +39,9 @@ $revenue = $revRow['s'];
 </body>
 </html>
 
-<!-- <?php
+
+<?php if (false): ?>
+<?php
 include "db.php";
  
 $clients = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS c FROM clients"))['c'];
@@ -49,6 +51,7 @@ $bookings = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS c FROM bo
 $revRow = mysqli_fetch_assoc(mysqli_query($conn, "SELECT IFNULL(SUM(amount_paid),0) AS s FROM payments"));
 $revenue = $revRow['s'];
 ?>
+
 <!doctype html>
 <html>
 <head>
@@ -74,5 +77,5 @@ $revenue = $revRow['s'];
 </p>
  
 </body>
-</html> -->
-
+</html>
+<?php endif; ?>

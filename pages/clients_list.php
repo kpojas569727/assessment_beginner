@@ -37,8 +37,8 @@ $result = mysqli_query($conn, "SELECT * FROM clients ORDER BY client_id DESC");
 
 
 
-
-<!-- <?php
+<?php if (false): ?>
+<?php
 include "../db.php";
 $result = mysqli_query($conn, "SELECT * FROM clients ORDER BY client_id DESC");
 ?>
@@ -68,4 +68,6 @@ $result = mysqli_query($conn, "SELECT * FROM clients ORDER BY client_id DESC");
   <?php } ?>
 </table>
 </body>
-</html> -->
+</html>
+
+<?php endif; ?>

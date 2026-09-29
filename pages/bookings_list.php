@@ -57,8 +57,8 @@ $result = mysqli_query($conn, $sql);
 
 
 
-
-<!-- <?php
+<?php if (false): ?>
+<?php
 include "../db.php";
  
 $sql = "
@@ -99,4 +99,6 @@ $result = mysqli_query($conn, $sql);
   <?php } ?>
 </table>
 </body>
-</html> -->
+</html>
+
+<?php endif; ?>
