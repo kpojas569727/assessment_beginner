@@ -1,7 +1,7 @@
 <?php // nav.php ?>
 <div class="bg-black p-3">
-  <div class="container d-flex justify-content-end">
-    <a href="/assessment_beginner/index.php" class="text-white me-3 text-decoration-none">Dashboard                                                              </a>
+  <div class="container d-flex align-items-center">
+    <a href="/assessment_beginner/index.php" class="text-white me-auto text-decoration-none fs-1">Dashboard</a>
     <a href="/assessment_beginner/pages/clients_list.php" class="text-white me-3 text-decoration-none">Clients</a>
     <a href="/assessment_beginner/pages/services_list.php" class="text-white me-3 text-decoration-none">Services</a>
     <a href="/assessment_beginner/pages/bookings_list.php" class="text-white me-3 text-decoration-none">Bookings</a>
@@ -9,6 +9,7 @@
     <a href="/assessment_beginner/pages/payments_list.php" class="text-white text-decoration-none">Payments</a>
   </div>
 </div>
+
 
 
 <?php if (false): ?>

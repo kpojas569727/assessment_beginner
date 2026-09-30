@@ -19,7 +19,8 @@ $revenue = $revRow['s'];
 
 <?php include "nav.php"; ?>
 
-<div class="container mt-4">
+<div class="container mt-3">
+  <div class="w-75 mx-auto">
   <h2 class="text-black">Dashboard</h2>
 
   <ul class="list-group mt-3">
@@ -34,6 +35,7 @@ $revenue = $revRow['s'];
     <a href="/assessment_beginner/pages/clients_add.php" class="btn btn-primary btn-sm">Add Client</a>
     <a href="/assessment_beginner/pages/bookings_create.php" class="btn btn-success btn-sm">Create Booking</a>
   </p>
+</div>
 </div>
 
 </body>
