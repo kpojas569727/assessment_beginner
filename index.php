@@ -1,4 +1,12 @@
 <?php
+// Include this at the very top of every page that needs a login.
+session_start();
+ 
+if (!isset($_SESSION['username'])) {
+    header("Location: /assessment_beginner/login.php");
+    exit;
+}
+
 include "db.php";
 
 $clients = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS c FROM clients"))['c'];
